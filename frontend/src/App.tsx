@@ -7,7 +7,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import * as yup from "yup"
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Link } from 'react-router-dom';
+
 
 type Inputs = {
   name: string,
