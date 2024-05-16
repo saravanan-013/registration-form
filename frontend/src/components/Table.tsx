@@ -13,10 +13,11 @@ type Inputs = {
   salary:string
 }
 
-const URL = "http://localhost:8000"
+const URL = "https://registration-form-tmh7.onrender.com"
 const Table = () => {
   const { data } = useQuery({
     queryFn: async () => {
+    
       const result = await axios.get(URL + '/get')
       return result?.data;
     }

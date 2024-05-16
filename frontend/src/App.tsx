@@ -54,7 +54,7 @@ function App() {
   const { mutate } = useMutation({
     mutationFn: async (value: Inputs) => {
       const salary = value.salary;
-      const result = await axios.post("http://localhost:8000/post", {
+      const result = await axios.post("https://registration-form-tmh7.onrender.com/post", {
         ...value,
         salary:parseInt(salary),
       }
