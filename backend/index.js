@@ -67,7 +67,7 @@ app.get('/get', handler(async (req, res) => {
     const result = await pool.query('SELECT * from employees');
 
     return res.status(200).json(
-        result.rowsn
+        result.rows
     )
 } ))
 
